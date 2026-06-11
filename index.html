@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundial 2026</title>
+
+<style>
+
+:root{
+  --bg:#050816;
+  --card:#111827;
+  --text:#e5e7eb;
+  --primary:#00d9ff;
+  --secondary:#9b5cff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:linear-gradient(135deg,#050816,#0b1023,#111827);
+  color:var(--text);
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  width:100%;
+  top:0;
+  padding:18px 8%;
+  display:flex;
+  justify-content:space-between;
+  background:rgba(0,0,0,.3);
+  backdrop-filter:blur(10px);
+  z-index:999;
+}
+
+.logo{
+  font-weight:bold;
+  font-size:1.5rem;
+  color:var(--primary);
+}
+
+.nav-links a{
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:4rem;
+  background:linear-gradient(90deg,#00d9ff,#9b5cff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* SECTIONS */
+section{
+  padding:100px 8%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(255,255,255,.05);
+  border-radius:20px;
+  overflow:hidden;
+  transition:.4s;
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  transition:.4s;
+}
+
+.card:hover img{
+  transform:scale(1.1);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card h3{
+  padding:15px;
+  text-align:center;
+}
+
+/* TEXTO */
+.text{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+  line-height:1.7;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">WORLD CUP 2026</div>
+  <div class="nav-links">
+    <a href="#descripcion">Descripción</a>
+    <a href="#sedes">Sedes</a>
+    <a href="#jugadores">Jugadores</a>
+    <a href="#prediccion">Predicción</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>FIFA WORLD CUP 2026</h1>
+</header>
+
+<section id="descripcion">
+  <div class="section-title">
+    <h2>Descripción</h2>
+  </div>
+  <p class="text">
+    La Copa Mundial de la FIFA 2026 será la más grande de la historia,
+    con 48 selecciones y 104 partidos. Será organizada por Estados Unidos,
+    México y Canadá, marcando el primer mundial en tres países.
+  </p>
+</section>
+
+<section id="sedes">
+  <div class="section-title">
+    <h2>Países Anfitriones</h2>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/MetLife_Stadium_2014.jpg">
+      <h3>🇺🇸 Estados Unidos</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Estadio_Azteca.jpg">
+      <h3>🇲🇽 México</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/BC_Place_Vancouver.jpg">
+      <h3>🇨🇦 Canadá</h3>
+    </div>
+
+  </div>
+</section>
+
+<section id="jugadores">
+  <div class="section-title">
+    <h2>Jugadores a Seguir</h2>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Kylian_Mbapp%C3%A9_2019.jpg">
+      <h3>Kylian Mbappé</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Jude_Bellingham_2023.jpg">
+      <h3>Jude Bellingham</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Erling_Haaland_2023.jpg">
+      <h3>Erling Haaland</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Lamine_Yamal_2023.jpg">
+      <h3>Lamine Yamal</h3>
+    </div>
+
+  </div>
+</section>
+
+<section id="prediccion">
+  <div class="section-title">
+    <h2>Predicción</h2>
+  </div>
+
+  <p class="text">
+    España parte como favorita debido a su nueva generación de talento joven.
+    Sin embargo, Argentina y Francia siguen siendo fuertes candidatos.
+  </p>
+</section>
+
+<footer>
+  Mundial 2026 - DevOps Project
+</footer>
+
+</body>
+</html>
